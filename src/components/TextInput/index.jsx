@@ -1,20 +1,23 @@
 import styles from "./index.module.css";
 
-export const TextInpt = ({ handleChange, searchValue }) => {
+import React from "react";
+
+export default function TextInput({ handleChange = null, searchValue = "" }) {
   function onHandleChange(e) {
     if (handleChange) {
       handleChange(e);
     }
   }
+
   return (
     <div className={styles.textInput}>
-        <input
-            type="search"
-            name="search"
-            id="search"
-            value={searchValue}
-            onChange={onHandleChange}
-        />
+      <input
+        type="search"
+        name="search"
+        id="search"
+        value={searchValue}
+        onChange={onHandleChange}
+      />
     </div>
   );
-};
+}

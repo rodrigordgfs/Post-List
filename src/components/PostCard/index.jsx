@@ -1,7 +1,6 @@
 import styles from './index.module.css';
 
-export const PostCard = ({ post }) => {
-  const { cover, title, body } = post;
+export default function PostCard({ post: { cover, title, body } }) {
   return (
     <div className={styles.post}>
       <img src={cover} alt={title} />
@@ -11,5 +10,5 @@ export const PostCard = ({ post }) => {
       </div>
     </div>
   );
-};
+}
 

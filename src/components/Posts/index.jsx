@@ -1,7 +1,7 @@
-import { PostCard } from "../PostCard";
-import styles from './index.module.css'
+import PostCard from "../PostCard";
+import styles from "./index.module.css";
 
-export const Posts = ({ posts }) => {
+export default function Posts({ posts }) {
   return (
     <div className={styles.posts}>
       {posts.map((post) => (
@@ -9,4 +9,4 @@ export const Posts = ({ posts }) => {
       ))}
     </div>
   );
-};
+}
