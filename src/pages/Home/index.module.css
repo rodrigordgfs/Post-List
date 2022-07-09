@@ -1,0 +1,13 @@
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #eee;
+  padding: 30px;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+  min-heigth: 60px;
+  display: flex;
+  align-items: flex-end;
+}
